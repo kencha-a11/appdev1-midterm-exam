@@ -13,13 +13,13 @@ function App() {
 
     useEffect(() => {
     const scripts = [
-      "../public/assets/js/animation.js",
-      "../public/assets/js/custom.js",
-      "../public/assets/js/imagesloaded.js",
-      "../public/assets/js/isotope.js",
-      "../public/assets/js/owl-carousel.js",
-      "../public/assets/js/popup.js",
-      "../public/assets/js/tabs.js",
+      "../assets/js/animation.js",
+      "../assets/js/custom.js",
+      "../assets/js/imagesloaded.js",
+      "../assets/js/isotope.js",
+      "../assets/js/owl-carousel.js",
+      "../assets/js/popup.js",
+      "../assets/js/tabs.js",
     ];
 
     scripts.forEach(src => {
