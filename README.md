@@ -17,4 +17,4 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Live Demo
 You can view the live version of the app here:  
-[ADD YOUR LINK HERE](https://kencha-a11.github.io/appdev1-midterm-exam/index.html#)
+[https://kencha-a11.github.io/appdev1-midterm-exam/index.html#](https://kencha-a11.github.io/appdev1-midterm-exam/index.html#)
