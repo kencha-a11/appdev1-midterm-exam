@@ -11,20 +11,22 @@ import Footer from "./components/Footer"
 
 function App() {
 
-    useEffect(() => {
+   useEffect(() => {
+    const base = import.meta.env.BASE_URL; // will be "/appdev1-midterm-exam/" on GitHub Pages
+
     const scripts = [
-      "../assets/js/animation.js",
-      "../assets/js/custom.js",
-      "../assets/js/imagesloaded.js",
-      "../assets/js/isotope.js",
-      "../assets/js/owl-carousel.js",
-      "../assets/js/popup.js",
-      "../assets/js/tabs.js",
+      "assets/js/animation.js",
+      "assets/js/custom.js",
+      "assets/js/imagesloaded.js",
+      "assets/js/isotope.js",
+      "assets/js/owl-carousel.js",
+      "assets/js/popup.js",
+      "assets/js/tabs.js",
     ];
 
     scripts.forEach(src => {
       const script = document.createElement("script");
-      script.src = src;
+      script.src = base + src; // automatically prepends the correct base
       script.async = true;
       document.body.appendChild(script);
     });
