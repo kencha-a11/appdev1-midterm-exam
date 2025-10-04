@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import PreLoader from "./components/PreLoader"
 import Header from "./components/Header"
 import Modal from "./components/Modal"
@@ -9,6 +10,25 @@ import Pricing from "./components/Pricing"
 import Footer from "./components/Footer"
 
 function App() {
+
+    useEffect(() => {
+    const scripts = [
+      "../public/assets/js/animation.js",
+      "../public/assets/js/custom.js",
+      "../public/assets/js/imagesloaded.js",
+      "../public/assets/js/isotope.js",
+      "../public/assets/js/owl-carousel.js",
+      "../public/assets/js/popup.js",
+      "../public/assets/js/tabs.js",
+    ];
+
+    scripts.forEach(src => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.async = true;
+      document.body.appendChild(script);
+    });
+  }, []);
 
   return (
     <>
